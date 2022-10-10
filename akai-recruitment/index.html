@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AKAI Frontend Task</title>
+	<link rel="stylesheet" type="text/css" href="css/form.css">
+	<meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+</head>
+<body>
+
+	<section id="task-frontend">
+		<img src="akai-logo.png" style="margin-top: 20px;">
+		<span class="basic-title"><h1>Dołącz do nas!</h1></span>
+
+		<form method="POST" id="form" onsubmit="return mainFunction()" action="">
+
+		    <input type="text" id="first_name" name="first_name" placeholder="Imię"/>
+			<div id="ifirst_name" class="error"></div>
+		    <input type="text" id="last_name" placeholder="Nazwisko"/>
+			<div id="ilast_name" class="error"></div>
+		    <input type="email" id="email" placeholder="Email"/>
+			<div id="iemail" class="error"></div>
+
+			<br>
+			<span><h3>Wybierz interesujące Cię sekcje</h3></span>
+
+			<div id="options">
+				<div>
+					<input type="checkbox" id="frontend-checkbox" name="section" value="frontend">
+					<label for="frontend-checkbox">Frontend</label>
+				</div>
+				<div>
+					<input type="checkbox" id="mobile-checkbox" name="section" value="frontend">
+					<label for="mobile-checkbox">Mobile</label>
+				</div>
+				<div>
+					<input type="checkbox" id="backend-checkbox" name="section" value="frontend">
+					<label for="backend-checkbox">Backend</label>
+				</div>
+				<div>
+					<input type="checkbox" id="graphics-checkbox" name="section" value="frontend">
+					<label for="graphics-checkbox">Grafika</label>
+				</div>
+			</div>
+			<br>
+			<div id="ioptions" class="error"></div>
+
+            <input type="submit" value="Wyślij">
+			<br><br>
+		</form>
+
+	</section>
+	
+	<script type="text/javascript" src="js/validation.js"></script>
+
+</body>
+</html>
